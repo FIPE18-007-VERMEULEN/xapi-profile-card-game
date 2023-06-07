@@ -1,0 +1,245 @@
+{
+    "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame",
+    "@context": "https://w3id.org/xapi/profiles/context",
+    "type": "Profile",
+    "conformsTo": "https://w3id.org/xapi/profiles#1.0",
+    "prefLabel": {
+        "en": "Card Game"
+    },
+    "definition": {
+        "en": "Actors, Verbs and Objects for use in card games."
+    },
+    "seeAlso": "https://apaches.wp.imt.fr/eiah23-deckify-rsc",
+    "versions": [
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "generatedAtTime": "2023-06-07T07:07:00.955Z"
+        }
+    ],
+    "author": {
+        "type": "Person",
+        "name": "Alexis Lebis",
+        "url": "https://cv.hal.science/alexislebis"
+    },
+    "concepts": [
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/dealt",
+            "type": "Verb",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "dealt"
+            },
+            "definition": {
+                "en": "Indicates that the actor has given one or several cards to others"
+            }
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/shuffled",
+            "type": "Verb",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "shuffled"
+            },
+            "definition": {
+                "en": "Indicates that the actor has mixed cards into a different order before using them"
+            }
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/drawn",
+            "type": "Verb",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "drawn"
+            },
+            "definition": {
+                "en": "Indicates that the actor pull the cards from the top of a Pack (usually a Deck). The drawn cards usually complete the Hand of the actor"
+            }
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/discarded",
+            "type": "Verb",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "discarded"
+            },
+            "definition": {
+                "en": "Indicates that the actor consciously (e.g. from a choice) remove a card from the game. Usually cards are discarded either from the Hand or the Deck, and put in the Discard Pile"
+            }
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/played",
+            "type": "Verb",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "played"
+            },
+            "definition": {
+                "en": "Indicates that the actor takes a card and puts it into the Play Zone. Usually, cards can only be played from the actor's Hand"
+            }
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/flipped",
+            "type": "Verb",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "flipped"
+            },
+            "definition": {
+                "en": "Indicates that the actor has changed the side of a card, thus hidding or revealing its information"
+            }
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/cast",
+            "type": "Verb",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "cast"
+            },
+            "definition": {
+                "en": "Indicates that the actor takes a card and puts it into the Play Zone. Usually, cards can only be cast from the actor's Hand"
+            },
+            "related": ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/played"],
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/deck",
+            "type": "Activity",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "deck"
+            },
+            "definition": {
+                "en": "A stacked collection of Cards where cards are drawn from during a game."
+            },
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/card",
+            "type": "Activity",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "card"
+            },
+            "definition": {
+                "en": "A card is a double sided rectangle with distinguishing motifs often interpreted as information. Normally the backs of the cards make them indistinguishable. The faces of the cards may all be unique, or there can be duplicates."
+            },
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/hand",
+            "type": "Activity",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "hand"
+            },
+            "definition": {
+                "en": "A cards collection belonging to the actor during a game, where card can be played. In general, all cards from a Hand are placed such that the face is in front of the actor, leaving the back to all the other players."
+            },
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/pack",
+            "type": "Activity",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "pack"
+            },
+            "definition": {
+                "en": "A pack represents a collection of stacked cards. It should be used as a broader term than other synonymous names used in card games such as 'deck', 'graveyard' or 'shoe' "
+            },
+            "broader" : ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/deck"]
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/discardPile",
+            "type": "Activity",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "discard pile"
+            },
+            "definition": {
+                "en": "A Pack which contains all the cards removed from the game. The cards are stacked either with their face or back visible. Usually, players can no longer play card in the Discard Pile. It is semantically equivalent to a Graveyard"
+            },
+            "exactMatch" : ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/graveyard"]
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/graveyard",
+            "type": "Activity",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "graveyard"
+            },
+            "definition": {
+                "en": "A Pack which contains all the cards removed from the game. The cards are stacked either with their face or back visible. Usually, players can no longer play card in the Graveyard. It is semantically equivalent to a Discard Pile."
+            },
+            "exactMatch" : ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/discardPile"]
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/playZone",
+            "type": "Activity",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "play zone"
+            },
+            "definition": {
+                "en": "Virtual or physical space delimitation representing where cards can be played"
+            },
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/cost",
+            "type": "ActivityExtension",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "cost"
+            },
+            "definition": {
+                "en": "How many a card cost to be played. The meaning of the cost depends of the game played."
+            },
+            "recommendedActivityTypes" : ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/card"],
+            "broader" : ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/value"]
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/content",
+            "type": "ActivityExtension",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "content"
+            },
+            "definition": {
+                "en": "Textual information written in the support, often explaining card's particularity or card's lore."
+            },
+            "recommendedActivityTypes" : ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/card","https://apaches.wp.imt.fr/xAPI/Profile/CardGame/deck", "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/pack"]
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/title",
+            "type": "ActivityExtension",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "title"
+            },
+            "definition": {
+                "en": "Textual information helping to distinguish a specific card from all the others."
+            },
+            "recommendedActivityTypes" : ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/card","https://apaches.wp.imt.fr/xAPI/Profile/CardGame/deck", "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/pack"]
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/side",
+            "type": "ActivityExtension",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "side"
+            },
+            "definition": {
+                "en": "An information representing either the face of a card is visible or its back."
+            },
+            "recommendedActivityTypes" : ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/card"]
+        },
+        {
+            "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/value",
+            "type": "ActivityExtension",
+            "inScheme": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/v1.0",
+            "prefLabel": {
+                "en": "value"
+            },
+            "definition": {
+                "en": "Numerical value associated to a Card or a Pack."
+            },
+            "recommendedActivityTypes" : ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/card","https://apaches.wp.imt.fr/xAPI/Profile/CardGame/deck", "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/pack"]
+        },
+    ]
+}
