@@ -98,7 +98,7 @@
             "definition": {
                 "en": "Indicates that the actor takes a card and puts it into the Play Zone. Usually, cards can only be cast from the actor's Hand"
             },
-            "related": ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/played"],
+            "related": ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/played"]
         },
         {
             "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/deck",
@@ -109,7 +109,7 @@
             },
             "definition": {
                 "en": "A stacked collection of Cards where cards are drawn from during a game."
-            },
+            }
         },
         {
             "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/card",
@@ -120,7 +120,7 @@
             },
             "definition": {
                 "en": "A card is a double sided rectangle with distinguishing motifs often interpreted as information. Normally the backs of the cards make them indistinguishable. The faces of the cards may all be unique, or there can be duplicates."
-            },
+            }
         },
         {
             "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/hand",
@@ -131,7 +131,7 @@
             },
             "definition": {
                 "en": "A cards collection belonging to the actor during a game, where card can be played. In general, all cards from a Hand are placed such that the face is in front of the actor, leaving the back to all the other players."
-            },
+            }
         },
         {
             "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/pack",
@@ -178,7 +178,7 @@
             },
             "definition": {
                 "en": "Virtual or physical space delimitation representing where cards can be played"
-            },
+            }
         },
         {
             "id": "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/cost",
@@ -240,6 +240,6 @@
                 "en": "Numerical value associated to a Card or a Pack."
             },
             "recommendedActivityTypes" : ["https://apaches.wp.imt.fr/xAPI/Profile/CardGame/card","https://apaches.wp.imt.fr/xAPI/Profile/CardGame/deck", "https://apaches.wp.imt.fr/xAPI/Profile/CardGame/pack"]
-        },
+        }
     ]
 }
